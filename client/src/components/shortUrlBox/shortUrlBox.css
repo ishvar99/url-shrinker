@@ -1,4 +1,4 @@
-.url-box{
+.short-url-box{
     display:flex;
     width: 100%;
     justify-content: center;
@@ -16,7 +16,7 @@
     font-size: 25px;
 }
 
-.create-btn{
+.copy-btn{
     background: #0074D9;
     border:1px solid #001f3f;
     border-left: 0px;

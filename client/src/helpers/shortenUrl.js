@@ -1,5 +1,5 @@
 const shortenUrl=(url)=>{
-    fetch('/shorten',{
+   return fetch('/shorten',{
         method:'POST',
         body:JSON.stringify({url}),
         headers: {
@@ -7,7 +7,6 @@ const shortenUrl=(url)=>{
           }
     })
     .then(res=>res.json())
-    .then((data)=>console.log(data));
 }
 
 export default shortenUrl;

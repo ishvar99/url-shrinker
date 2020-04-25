@@ -1,11 +1,18 @@
-.container{
+.container-box{
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  height:300px;
+  height:500px;
   justify-content: space-between;
 }
-.container h1{
-  color:#001f3f
+.container-box h1{
+  color:rgba(0, 0, 0, 0.568);
+  padding-right:10px;
+}
+.data{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 300px;
 }
