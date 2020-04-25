@@ -1,4 +1,11 @@
 .container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  color:darkblue
+  height:300px;
+  justify-content: space-between;
+}
+.container h1{
+  color:#001f3f
 }

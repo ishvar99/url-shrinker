@@ -1,0 +1,31 @@
+.url-box{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+.url-box input{
+    width: 30%;
+    min-width: 250px;
+    height: 75px;
+    border-radius: 20px 0 0 20px ;
+    outline: none;
+    padding-left: 25px;
+    border:2px solid #001f3f;
+    border-right: 0px;
+    font-size: 25px;
+}
+
+.create-btn{
+    background: #0074D9;
+    border:2px solid #001f3f;
+    border-left: 0px;
+    cursor: pointer;
+    width: 10%;
+    min-width:100px;
+    outline: none;
+    box-shadow: none;
+    border-radius: 0 20px 20px 0;
+    color:white;
+    font-size:20px;
+    font-weight: bold;
+}
