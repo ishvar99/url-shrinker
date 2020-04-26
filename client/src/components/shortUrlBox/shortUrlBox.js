@@ -6,7 +6,7 @@ const ShorturlBox=(props)=>{
     return (
         <div className="short-url-box">
             
-            <input id="foo" value={'localhost:3000/'+props.data} readOnly className="input-field" type="text"/>
+            <input id="foo" value={'localhost:5000/'+props.data} readOnly className="input-field" type="text"/>
             <button data-clipboard-target="#foo" className="copy-btn">Copy</button>
         </div>
     );

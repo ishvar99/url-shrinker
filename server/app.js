@@ -14,7 +14,6 @@ app.get('/',(req,res)=>{
 app.post('/shorten',(req,res)=>{
 const {url}=req.body;
 Url.findOne({fullUrl:url}).then((result)=>{
-    console.log(result);
         if(!result){
             if(!urlRegex({exact: true,strict:false}).test(url)){
                 res.json({error:'Invalid URL'})
@@ -32,6 +31,15 @@ Url.findOne({fullUrl:url}).then((result)=>{
             res.json({message:result})
         }
 })
-
 });
+
+app.get('/:shortId',(req,res)=>{
+    console.log(req.params.shortId)
+    Url.findOne({shortUrl:req.params.shortId})
+    .then((url)=>{
+        console.log(url);
+        res.redirect(url.fullUrl);
+    })
+    .catch((err)=>console.log(err));
+})
 app.listen(PORT,()=>console.log('Server is running'));
