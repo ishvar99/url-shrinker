@@ -10,6 +10,11 @@
   color:rgba(0, 0, 0, 0.568);
   padding-right:10px;
 }
+.alert{
+  width:12%;
+  margin:auto;
+  font-size:24px;
+}
 .data{
   display: flex;
   flex-direction: column;

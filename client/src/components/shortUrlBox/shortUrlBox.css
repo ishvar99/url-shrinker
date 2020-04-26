@@ -23,7 +23,7 @@
     cursor: pointer;
     width: 7%;
     min-width:100px;
-    outline: none;
+    outline: none !important;
     box-shadow: none;
     border-radius: 0 20px 20px 0;
     color:white;

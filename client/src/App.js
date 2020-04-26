@@ -3,12 +3,14 @@ import './App.css';
 import UrlBox from './components/Urlbox/urlBox'
 import shortenUrl from './helpers/shortenUrl'
 import ShortUrlBox from './components/shortUrlBox/shortUrlBox';
+
 function App() {
+ 
   const [url,setUrl]=useState('');
   const [shorturl,setShortUrl]=useState('');
   return (
     <div className="container-box">
-      <h1>
+      <h1> 
         WELCOME TO URL SHRINKER
       </h1>
       <div className="data">
@@ -19,7 +21,7 @@ function App() {
           }
           else
           setShortUrl('');
-        })
+                 })
         }}/>
      {shorturl? <ShortUrlBox data={shorturl}/>:<div/>}
       </div>
