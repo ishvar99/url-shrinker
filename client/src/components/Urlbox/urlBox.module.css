@@ -1,9 +1,9 @@
-.short-url-box{
+.urlbox{
     display:flex;
     width: 100%;
     justify-content: center;
 }
-.input-field{
+.input{
     width: 25%;
     min-width: 250px;
     height: 75px;
@@ -16,7 +16,7 @@
     font-size: 25px;
 }
 
-.copy-btn{
+.btn{
     background: #0074D9;
     border:1px solid #001f3f;
     border-left: 0px;

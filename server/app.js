@@ -24,6 +24,8 @@ Url.findOne({fullUrl:url}).then((result)=>{
                     'shortUrl':shortId.generate()
                 }).then((url)=>{
                     res.json({message:url})
+                }).catch((err)=>{
+                    res.json({error:'Error'})
                 })
             }
         }
@@ -37,7 +39,6 @@ app.get('/:shortId',(req,res)=>{
     console.log(req.params.shortId)
     Url.findOne({shortUrl:req.params.shortId})
     .then((url)=>{
-        console.log(url);
         res.redirect(url.fullUrl);
     })
     .catch((err)=>console.log(err));
